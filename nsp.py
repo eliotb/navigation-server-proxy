@@ -308,7 +308,7 @@ def route_ecan(query):
         'barriers=',
         'polylineBarriers=',
         'polygonBarriers=',
-        'outSR=',
+        'outSR=4326',  # causes returned values in degrees
         'ignoreInvalidLocations=trueaccumulateAttributeNames=',
         'impedanceAttributeName=Length',
         'restrictionAttributeNames=Oneway',
