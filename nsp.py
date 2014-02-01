@@ -479,7 +479,7 @@ def route_ecan(query):
     app.logger.info('ecan result = %s' % result)
     res = RouteResult()
     path = result['routes']['features'][0]['geometry']['paths'][0]
-    res['coordinates'] = [(p[1], p[0]) for p in path]
+    res['track'] = [(p[1], p[0]) for p in path]
     res['type'] = "LineString"
     app.logger.info('ecan reply = %s' % res)
     return res
